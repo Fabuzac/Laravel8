@@ -17,26 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
-
-
-
-
-
-
-
+Route::get('post', function() {
+    return view('post');
+});
 
 //Auth::routes();
-
-
-// Route::get('post',function {
-//     return view('post', [
-//         'post' => file_get_contents(__DIR__ . '/../ressources/posts')
-//     ]);
-// });
-
-// Route::get('/env', function() {
-//     dd(env('DB_database'));
-// });
-
