@@ -52,6 +52,11 @@ Route::prefix('admin')->group(function() {
 
 });
 
+
+
+
+// Route::post('/articles', [App\Http\Controllers\ArticlesController::class, 'store']);
+
 // Route::get('posts/{post}', function($slug) {
 
 //     return view('post', [
