@@ -35,11 +35,15 @@ Route::put('/store', function() {
 });
 
 
+Route::post('/create', function() {
+    return view('create');
+});
+
 Route::get('/articles/{id}/comment/{author?}', function($id, $author = 'Author') {
     return $author . 'text blabla' . $id;
 });
 
-//Grouper les routes
+//Group
 Route::prefix('admin')->group(function() {
 
     Route::put('/users', function() {
